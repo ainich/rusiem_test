@@ -31,7 +31,6 @@ function run_preinst  {
 }
 
 run_preinst
-apt-get remove postgres*
 apt-get update
 apt-get install rusiem-web rusiem-database rvsiem-kernel rusiem-kb -y
 cp /opt/rusiem/modules.dat $modules_dat
