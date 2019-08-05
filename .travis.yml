@@ -1,6 +1,6 @@
 dist: trusty
 sudo: enabled
 install:
-  - "bash ./install.sh 1"
+  - "sudo bash ./install.sh 1"
 script: 
-  - /opt/rusiem/support/syschecker.sh
+  - sudo /opt/rusiem/support/syschecker.sh
