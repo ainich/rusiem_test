@@ -1,5 +1,5 @@
 #!/bin/bash
-
+modules_dat="/opt/rusiem/modules_user.dat"
 
 echo "Install RvSIEM free (kernel + database)"
 
@@ -33,7 +33,8 @@ function run_preinst  {
 run_preinst
 apt-get update
 apt-get install rusiem-web rusiem-database rvsiem-kernel rusiem-kb -y
-cp /opt/rusiem/modules.dat $modules_dat; cat /dev/null > $modules_dat
+cp /opt/rusiem/modules.dat $modules_dat
+cat /dev/null > $modules_dat
 echo "siem=0" >> $modules_dat
 echo "analytics=0" >> $modules_dat
 echo "free_rvsiem=1" >> $modules_dat
