@@ -3,3 +3,4 @@ install:
   - "wget https://rusiem.com/install/install.sh; bash ./install.sh"
 script: 
   - /opt/rusiem/support/syschecker.sh
+dist: xenial
