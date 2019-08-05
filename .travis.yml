@@ -1,7 +1,7 @@
 dist: trusty
 sudo: enabled
 install:
-  - "export prompt=1"
+  - "export rvsiem=1"
   - "wget https://rusiem.com/install/install.sh; bash ./install.sh 1"
 script: 
   - /opt/rusiem/support/syschecker.sh
