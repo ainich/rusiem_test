@@ -1,8 +1,6 @@
 dist: trusty
 sudo: enabled
-env:
-  - rvsiem=1
 install:
-  - "wget https://rusiem.com/install/install.sh; bash ./install.sh 1"
+  - "wget https://rusiem.com/install/install.sh; bash ./install.sh --rvsiem"
 script: 
   - /opt/rusiem/support/syschecker.sh
