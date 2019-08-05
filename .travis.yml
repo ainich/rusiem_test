@@ -1,6 +1,6 @@
 dist: trusty
 sudo: enabled
 install:
-  - "wget https://rusiem.com/install/install.sh; bash ./install.sh"
+  - "wget https://rusiem.com/install/install.sh; bash ./install.sh 1"
 script: 
   - /opt/rusiem/support/syschecker.sh
