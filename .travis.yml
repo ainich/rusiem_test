@@ -1,4 +1,4 @@
-dist: xenial
+dist: trusty
 sudo: enabled
 install:
   - "wget https://rusiem.com/install/install.sh; bash ./install.sh"
