@@ -24,10 +24,10 @@ function run_preinst  {
 		if [ -f "dmidecode_3.2-1_amd64.deb" ]; then dpkg -i dmidecode_3.2-1_amd64.deb;else "$(tput setaf 1)Package dmidecode_3.2-1_amd64.deb not found$(tput sgr 0)";fi
 	fi
 	tk=$(/usr/sbin/dmidecode -s system-uuid | awk '{print toupper($0)}')
-	add-apt-repository "deb https://support.rusiem.com/pubrepo/debian trusty main";fi
-	add-apt-repository "deb https://orion.rusiem.com/pubrepo/debian trusty main";fi
-	add-apt-repository "deb https://$tk@support.rusiem.com/repo/debian trusty main";fi
-	add-apt-repository "deb https://$tk@orion.rusiem.com/repo/debian trusty main";fi
+	add-apt-repository "deb https://support.rusiem.com/pubrepo/debian trusty main"
+	add-apt-repository "deb https://orion.rusiem.com/pubrepo/debian trusty main"
+	add-apt-repository "deb https://$tk@support.rusiem.com/repo/debian trusty main"
+	add-apt-repository "deb https://$tk@orion.rusiem.com/repo/debian trusty main"
 }
 
 run_preinst
