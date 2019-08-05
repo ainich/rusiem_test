@@ -3,6 +3,6 @@ sudo: enabled
 env:
   - rvsiem=1
 install:
-  - "wget https://rusiem.com/install/install.sh; bash ./install.sh 1"
+  - "bash ./install.sh 1"
 script: 
   - /opt/rusiem/support/syschecker.sh
