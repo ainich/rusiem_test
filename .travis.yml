@@ -1,5 +1,4 @@
-#dist: trusty
-#dist: bionic
+dist: trusty
 
 sudo: enabled
 install:
