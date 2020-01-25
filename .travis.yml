@@ -1,6 +1,4 @@
-dist: 
-   - trusty
-   - bionic
+dist: trusty
 sudo: enabled
 install:
   - "sudo bash ./install.sh 1"
