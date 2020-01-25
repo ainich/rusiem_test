@@ -1,6 +1,9 @@
-dist: trusty
+dist: 
+   - trusty
+   - bionic
 sudo: enabled
 install:
   - "sudo bash ./install.sh 1"
 script: 
   - sudo /opt/rusiem/support/syschecker.sh
+#test3
