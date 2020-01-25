@@ -4,3 +4,4 @@ install:
   - "sudo bash ./install.sh 1"
 script: 
   - sudo /opt/rusiem/support/syschecker.sh
+#run
